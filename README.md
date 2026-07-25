@@ -1,8 +1,8 @@
-# 🧠 NeuroStack
+# 🧠 ORVEN
 
 > A Full-Stack Generative AI Quality Assurance (GenAI QA) Platform built with React, FastAPI, PostgreSQL, and Retrieval-Augmented Generation (RAG).
 
-NeuroStack is a personal AI engineering project developed to demonstrate modern Generative AI application development using a scalable full-stack architecture.
+ORVEN is a personal AI engineering project developed to demonstrate modern Generative AI application development using a scalable full-stack architecture.
 
 The platform combines AI Governance principles with Retrieval-Augmented Generation (RAG) to provide intelligent document-based question answering, AI asset management, model evaluation, dataset management, analytics, and centralized administration.
 
@@ -93,7 +93,7 @@ It serves as a showcase project for building production-ready AI applications us
 # 📂 Project Structure
 
 ```
-NeuroStack
+ORVEN
 │
 ├── frontend
 │
