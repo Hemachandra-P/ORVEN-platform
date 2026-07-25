@@ -9,6 +9,9 @@ from app.schemas.chat import ChatRequest, ChatResponse
 from app.services.conversation_service import get_conversation
 from app.services.message_service import create_message
 
+from app.services.search_service import SearchService
+from app.services.prompt_builder import PromptBuilder
+
 
 def generate_chat(
     request: ChatRequest,
@@ -35,11 +38,42 @@ def generate_chat(
             model=request.model,
         )
 
+        # -----------------------------
+        # Retrieval (Semantic Search)
+        # -----------------------------
+        search_service = SearchService()
+
+        chunks = search_service.search(
+            db=db,
+            query=request.prompt,
+            limit=5,
+        )
+        print("=" * 60)
+        print("Retrieved Chunks:", len(chunks))
+        for i, chunk in enumerate(chunks):
+              print(f"\nChunk {i + 1}")
+              print(chunk.content[:300])
+              print("=" * 60)
+
+        # -----------------------------
+        # Prompt Construction (RAG)
+        # -----------------------------
+        rag_prompt = PromptBuilder.build(
+            question=request.prompt,
+            context_chunks=[
+                chunk.content
+                for chunk in chunks
+            ],
+        )
+
+        # -----------------------------
+        # LLM Generation
+        # -----------------------------
         start_time = perf_counter()
 
         result = connector.generate(
             model_id=request.model,
-            prompt=request.prompt,
+            prompt=rag_prompt,
         )
 
         latency = round(perf_counter() - start_time, 3)

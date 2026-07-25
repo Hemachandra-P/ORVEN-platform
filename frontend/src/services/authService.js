@@ -20,3 +20,11 @@ export async function getCurrentUser() {
     const { data } = await api.get("/users/me");
     return data;
 }
+export async function changePassword(currentPassword, newPassword) {
+    const { data } = await api.put("/auth/change-password", {
+        currentPassword,
+        newPassword,
+    });
+
+    return data;
+}

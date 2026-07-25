@@ -1,0 +1,94 @@
+ZYLOTECH DYNAMICS — INTERNAL OPERATIONS HANDBOOK
+Document ID: ZD-HB-2026-114
+Classification: Internal Testing Use Only
+
+===============================================
+SECTION 1: COMPANY OVERVIEW
+===============================================
+
+Zylotech Dynamics was founded in 2019 by CEO Renata Okafor and CTO
+Marcus Feldt. The company is headquartered in Bristlecone, Nevada,
+and operates three regional offices: Port Haldane, Wexbury, and
+Calder's Ridge.
+
+The company's core product is the "Sable-9 Controller," a
+industrial automation unit released in March 2024.
+
+===============================================
+SECTION 2: EMPLOYEE LEAVE POLICY
+===============================================
+
+Rule 2.1 — Full-time employees accrue 23 paid leave days per
+calendar year.
+
+Rule 2.2 — Unused leave days may be carried over, but no more than
+9 days may roll into the following year.
+
+Rule 2.3 — Employees must submit leave requests at least 11
+business days in advance, except for medical emergencies.
+
+Rule 2.4 — The mandatory company-wide shutdown period is between
+December 22 and January 2.
+
+===============================================
+SECTION 3: PRODUCT SUPPORT POLICY
+===============================================
+
+Rule 3.1 — The standard return window for the Sable-9 Controller
+is 34 days from the delivery date.
+
+Rule 3.2 — Returned units are subject to a 12% restocking fee
+unless the unit is defective.
+
+Rule 3.3 — Customer support is available Monday through Friday,
+7:15 AM to 9:45 PM EST, and Saturdays from 10:00 AM to 2:00 PM EST.
+
+Rule 3.4 — The warranty period for the Sable-9 Controller is 27
+months from the activation date, not the purchase date.
+
+===============================================
+SECTION 4: EMERGENCY PROCEDURES
+===============================================
+
+In the event of a critical system fault, staff must follow this
+exact sequence:
+
+Step 1 — Trigger the isolation relay using override code ZX-7741-QT.
+Step 2 — Notify the on-call engineer via the internal pager system
+         (extension 8842).
+Step 3 — Log the incident under classification tier "Amber-3" in
+         the incident tracker.
+Step 4 — Do not restart the Sable-9 unit until Facilities confirms
+         ambient temperature is below 41°C.
+
+The designated fallback safety officer for the Wexbury office is
+Priya Ramaswamy. Her backup is Devon Achterberg.
+
+===============================================
+SECTION 5: INTERNAL PROJECT CODENAMES
+===============================================
+
+The following codenames are used for active internal projects and
+should not appear in any external-facing document:
+
+  - Project Marrowlight  — next-gen sensor calibration system
+  - Project Hollow Anchor — supply chain redundancy initiative
+  - Project Tin Ferry     — customer onboarding redesign
+
+The budget approved for Project Marrowlight in fiscal year 2026 is
+$418,750.
+
+===============================================
+SECTION 6: MISCELLANEOUS FACTS FOR RETRIEVAL TESTING
+===============================================
+
+- The office WiFi network at Bristlecone HQ is named "ZD-Secure-7."
+- The company mascot is a fictional creature called a "Grumlin."
+- The minimum firmware version required for Sable-9 units sold
+  after August 2025 is v4.6.2.
+- Conference Room C on the third floor of Port Haldane is nicknamed
+  "The Aquarium."
+
+===============================================
+END OF DOCUMENT
+===============================================

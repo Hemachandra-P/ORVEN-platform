@@ -1,4 +1,5 @@
 from sqlalchemy import ForeignKey, Integer, Text
+from sqlalchemy.dialects.postgresql import TSVECTOR
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from pgvector.sqlalchemy import Vector
 
@@ -8,20 +9,38 @@ from app.database.base import Base
 class DocumentChunk(Base):
     __tablename__ = "document_chunks"
 
-    id: Mapped[int] = mapped_column(primary_key=True, index=True)
+    id: Mapped[int] = mapped_column(
+        primary_key=True,
+        index=True,
+    )
 
     document_id: Mapped[int] = mapped_column(
         ForeignKey("documents.id", ondelete="CASCADE"),
         nullable=False,
     )
 
-    chunk_index: Mapped[int] = mapped_column(Integer, nullable=False)
+    chunk_index: Mapped[int] = mapped_column(
+        Integer,
+        nullable=False,
+    )
 
-    content: Mapped[str] = mapped_column(Text, nullable=False)
+    content: Mapped[str] = mapped_column(
+        Text,
+        nullable=False,
+    )
 
     embedding: Mapped[list[float]] = mapped_column(
         Vector(768),
         nullable=False,
     )
 
-    document = relationship("Document", back_populates="chunks")
+    # PostgreSQL Full-Text Search vector
+    search_vector = mapped_column(
+        TSVECTOR,
+        nullable=True,
+    )
+
+    document = relationship(
+        "Document",
+        back_populates="chunks",
+    )
