@@ -1,100 +1,173 @@
 # 🧠 NeuroStack
 
-NeuroStack is a modern Enterprise AI Governance Platform designed to help organizations manage, govern, evaluate, and monitor AI systems from a single unified dashboard.
+> A Full-Stack Generative AI Quality Assurance (GenAI QA) Platform built with React, FastAPI, PostgreSQL, and Retrieval-Augmented Generation (RAG).
 
-The platform provides end-to-end AI governance capabilities, including AI asset management, project tracking, dataset and document management, model evaluations, analytics, and an intelligent Retrieval-Augmented Generation (RAG) chatbot for interacting with organizational knowledge.
+NeuroStack is a personal AI engineering project developed to demonstrate modern Generative AI application development using a scalable full-stack architecture.
 
-Built with a scalable full-stack architecture using React, FastAPI, and PostgreSQL, NeuroStack demonstrates enterprise-grade software engineering principles suitable for modern AI applications.
+The platform combines AI Governance principles with Retrieval-Augmented Generation (RAG) to provide intelligent document-based question answering, AI asset management, model evaluation, dataset management, analytics, and centralized administration.
+
+It serves as a showcase project for building production-ready AI applications using modern web technologies and LLM-powered workflows.
 
 ---
 
-## 🚀 Features
+# ✨ Features
 
-### 📊 Dashboard
-- Enterprise overview dashboard
-- AI asset statistics
-- Project metrics
-- Evaluation summaries
-- Analytics widgets
+## 🤖 AI Governance
 
-### 🏢 Organization Management
-- Create organizations
-- Manage business units
-- Organization overview
-
-### 📁 Project Management
-- Create and manage AI projects
-- Project lifecycle tracking
-- Project metadata management
-
-### 🤖 AI Model Registry
-- Register AI models
-- Track model information
-- Model metadata management
-- Governance-ready model catalog
-
-### 📂 Dataset Management
-- Register datasets
-- Track dataset information
+- AI asset management
+- Model registry
+- Organization management
+- Project management
 - Dataset catalog
-
-### 📄 Document Management
-- Upload enterprise documents
-- Document storage
-- Document indexing
-- Document retrieval
-
-### 💬 RAG Chat Assistant
-- Upload documents
-- Automatic document chunking
-- Vector embedding generation
-- Semantic similarity search
-- Context-aware AI responses
-- Enterprise document Q&A
-
-### 📈 Analytics
-- AI governance insights
-- Platform analytics
-- Performance visualization
-- Usage statistics
-
-### ⚙️ Settings
-- Account management
-- Security information
-- Platform configuration
+- Document repository
 
 ---
 
-## 🏗️ Technology Stack
+## 💬 GenAI QA (RAG Chat)
 
-### Frontend
+- Upload PDF and text documents
+- Automatic document chunking
+- Embedding generation
+- Semantic vector search
+- Context-aware question answering
+- Retrieval-Augmented Generation (RAG)
+
+---
+
+## 📊 AI Evaluation
+
+- Evaluation dashboard
+- Model assessment
+- Performance tracking
+- AI evaluation workflows
+
+---
+
+## 📈 Analytics
+
+- Platform statistics
+- AI asset insights
+- Governance metrics
+- Dashboard visualizations
+
+---
+
+## ⚙️ Administration
+
+- Secure authentication
+- User settings
+- Centralized management
+
+---
+
+# 🏗️ Tech Stack
+
+## Frontend
+
 - React
 - Vite
 - Tailwind CSS
 - React Router
 - Axios
 
-### Backend
+## Backend
+
 - FastAPI
 - SQLAlchemy
 - Alembic
 - Pydantic
 
-### Database
+## Database
+
 - PostgreSQL
 
-### AI & RAG
+## AI Technologies
+
 - LangChain
 - OpenAI Embeddings
-- FAISS Vector Store
+- FAISS
 - Retrieval-Augmented Generation (RAG)
-
-### Deployment
-- GitHub
-- Vercel
-- Render
-- Neon PostgreSQL
 
 ---
 
-## 📁 Project Structure
+# 📂 Project Structure
+
+```
+NeuroStack
+│
+├── frontend
+│
+├── backend
+│
+├── docs
+│
+├── requirements.txt
+│
+└── README.md
+```
+
+---
+
+# 🚀 Core Modules
+
+- Dashboard
+- Organizations
+- Projects
+- AI Models
+- Datasets
+- Documents
+- Evaluations
+- Analytics
+- RAG Chat
+- Settings
+
+---
+
+# 🌐 Deployment
+
+- Frontend — Vercel
+- Backend — Render
+- Database — PostgreSQL
+
+---
+
+# 🎯 Purpose
+
+This project was built to demonstrate practical skills in:
+
+- Full-Stack Development
+- FastAPI REST API Development
+- React Frontend Development
+- PostgreSQL Database Design
+- Retrieval-Augmented Generation (RAG)
+- Vector Search
+- AI Governance Concepts
+- LangChain Integration
+- Enterprise AI Application Development
+
+---
+
+# 🔮 Future Improvements
+
+- Multi-user authentication
+- Role-Based Access Control (RBAC)
+- AI Guardrails
+- Compliance workflows
+- Audit logging
+- Model monitoring
+- AI risk assessment
+- Report generation
+- API integrations
+
+---
+
+# 👨‍💻 Author
+
+**Hemachandra Perigisetty**
+
+- LinkedIn: https://www.linkedin.com/in/hemachandra-venk/
+- GitHub: https://github.com/Hemachandra-P
+
+---
+
+⭐ If you found this project interesting, feel free to star the repository.
