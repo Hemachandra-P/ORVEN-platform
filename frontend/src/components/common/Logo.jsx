@@ -16,7 +16,7 @@ export default function Logo() {
             <div>
 
                 <h1 className="text-2xl font-bold text-white">
-                    NeuroStack
+                    ORVEN
                 </h1>
 
                 <p className="text-xs text-slate-400">
