@@ -33,7 +33,11 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
+        "https://orven-platform.vercel.app",
     ],
+    # Also allow Vercel's preview-deployment URLs (e.g. per-branch/PR builds),
+    # which follow the pattern https://orven-platform-<hash>-<team>.vercel.app
+    allow_origin_regex=r"https://orven-platform.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
