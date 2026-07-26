@@ -119,15 +119,7 @@ ORVEN
 - Evaluations
 - Analytics
 - RAG Chat
-- Settings
-
----
-
-# 🌐 Deployment
-
-- Frontend — Vercel
-- Backend — Render
-- Database — PostgreSQL
+- Settings
 
 ---
 
