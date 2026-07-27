@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const API_BASE_URL = "http://127.0.0.1:8000";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
 
 const PROVIDER_COLORS = [
     { hex: "#6366F1", bar: "bg-indigo-500", chip: "bg-indigo-100 text-indigo-700" },
