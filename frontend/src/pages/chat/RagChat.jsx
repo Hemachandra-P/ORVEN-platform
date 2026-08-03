@@ -585,7 +585,7 @@ export default function RagChat() {
                                 </div>
 
                                 <h2 className="text-3xl font-bold text-slate-800">
-                                    Welcome to NeuroStack RAG Chat
+                                    Welcome to ORVEN RAG Chat
                                 </h2>
 
                                 <p className="mt-3 max-w-2xl text-center text-slate-500">
